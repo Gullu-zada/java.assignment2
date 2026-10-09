@@ -1,21 +1,26 @@
 # Exercise 2 — Invoice UML Class Diagram
 
-```mermaid
-classDiagram
-    class Invoice {
-        -String partNumber
-        -String partDescription
-        -int quantity
-        -double pricePerItem
-        +Invoice(String partNumber, String partDescription, int quantity, double pricePerItem)
-        +String getPartNumber()
-        +void setPartNumber(String partNumber)
-        +String getPartDescription()
-        +void setPartDescription(String partDescription)
-        +int getQuantity()
-        +void setQuantity(int quantity)
-        +double getPricePerItem()
-        +void setPricePerItem(double pricePerItem)
-        +double getInvoiceAmount()
-    }
+```text
+------------------------------------------------
+                    Invoice
+------------------------------------------------
+- partNumber: String
+- partDescription: String
+- quantity: int
+- pricePerItem: double
+------------------------------------------------
++ Invoice(partNumber: String,
+          partDescription: String,
+          quantity: int,
+          pricePerItem: double)
++ getPartNumber(): String
++ setPartNumber(partNumber: String): void
++ getPartDescription(): String
++ setPartDescription(partDescription: String): void
++ getQuantity(): int
++ setQuantity(quantity: int): void
++ getPricePerItem(): double
++ setPricePerItem(pricePerItem: double): void
++ getInvoiceAmount(): double
+------------------------------------------------
 ```
